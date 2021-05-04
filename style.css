@@ -1,0 +1,197 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.graphics{
+    width: 100%;
+    z-index: -100;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+.btn-3{
+    z-index: 5;
+    position: absolute;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(227, 167, 17);
+}
+
+.containerMain{
+    height: calc(100vw * 0.525);
+    position: relative;
+}
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'PT Sans', sans-serif;
+  display: table;
+  width: 100%;
+  background-color: rgb(227, 167, 17);
+}
+.container{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100vh;
+}
+button{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  margin: 20px 30px;
+  background: 	rgba(255,255,255, 0.3);
+}
+span{
+  display: block;
+  padding: 25px 80px;
+}
+button::before, button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgb(227, 167, 17);
+}
+
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgb(227, 167, 17);
+}
+button:hover::before, button:hover::after{
+  width: 100%;
+}
+button:hover span::before, button:hover span::after{
+  height: 100%;
+}
+
+/*----- button 3 -----*/
+.btn-3::after{
+  left: 0;
+  bottom: 0;
+  transition-delay: 0.6s;
+}
+.btn-3 span::after{
+  transition-delay: 0.4s;
+  right: 0;
+  bottom: 0
+}
+.btn-3::before{
+  right: 0;
+  top: 0;
+  transition-delay: 0.2s;
+}
+.btn-3 span::before{
+  transition-delay: 0s;
+  left: 0;
+  top: 0;
+}
+
+.btn-3:hover::after{
+  transition-delay: 0s;
+}
+.btn-3:hover span::after{
+  transition-delay: 0.2s;
+}
+.btn-3:hover::before{
+  transition-delay: 0.4s;
+}
+.btn-3:hover span::before{
+  transition-delay: 0.6s;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    opacity: 10%;
+    /* background-color: rgb(227, 167, 17); */
+}
+
+.reviewsText{
+    text-align:center;
+    color: white;
+}
+
+.flexContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item{
+  text-align: center;
+  width: 200px;
+  padding: 15px;
+  border: 5px solid white;
+  margin: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.codingImage{
+  width: 100%;
+  padding-top: 30px;
+  filter: brightness(70%);
+}
+.divider{
+  padding: 50
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+header {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    /* position: fixed; */
+    /* background: rgba(50,50,50,.95); */
+    /* box-shadow: 0 10px 20px rgba(50,50,50,.95); */
+}
+nav a {
+    float: right;
+    font: 1.2em/1em sans-serif;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: rgb(227, 167, 17);
+}
+
+nav a:hover{
+    color: rgb(255, 203, 73);
+}
+
+.paycontain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
